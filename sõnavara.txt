@@ -1,1 +1,11 @@
+Andmed ja informatsioon 
+Andmed - see on informatsioon 
+Haldus- Администрирование/обслуживание
+Adnmebaaside - haldussüüstemid- системы  администрирования  БД -программы для работы с БД - 
+MS SQL Server ,Oracle ,maridaDB/phpMyadmin, Access.
 
+
+SStabel/tabelid
+rida/read - строка / строки
+veerg /veerud -stolbec/stolbcy
+verg
