@@ -139,3 +139,5 @@ DROP tabele auto;
 
 DELETE FROM inimene
 WHERE inimeneID=3
+
+
