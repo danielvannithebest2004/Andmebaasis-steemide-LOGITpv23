@@ -141,3 +141,4 @@ DELETE FROM inimene
 WHERE inimeneID=3
 
 
+
