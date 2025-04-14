@@ -1,6 +1,4 @@
---kommentaar 
--- SQL SERVER Management Studio
-Server Name 
+
 CREATE DATABASE vanniLogITPV23;
 USE vanniLogITPV23;
 
@@ -129,6 +127,37 @@ select * from auto
 
 insert into 
 (nimi,sünniaeg,teefon,pikkus,õpilaskodu,elukohtdID,autoID)
+
+
+
+
+CREATE TABLE filmid;
+filmID int primary key identity(1,1),
+filmNimi varchar(30) unique,
+filmNimi int,
+rezisoor varchar(30)
+);
+SELECT * FROM filmid
+
+INSERT INTO filmid (filmNimi,filmPikkus,rezisoor)
+VALUES('Minecraft',120, 'Jared Hess')
+
+--protseduur,mis lisab uus film ja kohe näitab tabelis (INSERT,SELECT)
+CREATE PROCEDURE lisafilm
+@nimi varchar(30)
+@pikkus int,
+@rezisoor varchar (30)
+AS
+BEGIN
+INSERT INTO filmid (filmNimi,filmPikkus,rezisoor)
+VALUES (@nimi,@pikkus,@rezisoor);
+SELECT * from filmid,
+END,
+
+--kutse
+EXEC lisafilm 'Bob ja Bobek', 120,'testtest';
+
+DROP Procedure lisafilm;
 values ('ssl', '2002' , '1414214' , 100.00, 0, 1, 1)
 
 select i.nimi, a.v_aasta, a.mark, a.model
